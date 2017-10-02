@@ -60,12 +60,16 @@ class neuralNetwork:
         # update the weights for the links between the input and hidden layers
         self.wih += self.lr * numpy.dot((hidden_errors * hidden_outputs * (1.0 - hidden_outputs)), numpy.transpose(inputs))
         
-        print('media y desviacion estandar del output error')
-        print(numpy.mean(output_errors))
-        print(numpy.std(output_errors))
-        print('media y desviacion estandar del hidden error')
+        
+        print('media del hidden error')
         print(numpy.mean(hidden_errors))
+        print('desviacion estandar del hidden error')
         print(numpy.std(hidden_errors))
+
+        print('media estandar del output error')
+        print(numpy.mean(output_errors))
+        print('desviacion estandar del output error')
+        print(numpy.std(output_errors))
 
         pass
 
