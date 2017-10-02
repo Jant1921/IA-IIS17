@@ -187,16 +187,7 @@ for record in test_data_list:
     print("Valor esperado", correct_label)
     print("Resultado", label)
     print ("Outputs de la red = ", outputs)
-    # append correct or incorrect to list
-    if (label == correct_label):
-        # network's answer matches correct answer, add 1 to scorecard
-        scorecard.append(1)
-    else:
-        # network's answer doesn't match correct answer, add 0 to scorecard
-        scorecard.append(0)
-        pass
-    
-    pass
+
 
 
 # In[ ]:
