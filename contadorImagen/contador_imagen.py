@@ -83,12 +83,12 @@ class neuralNetwork:
 # number of input, hidden and output nodes
 #se duplica la cantidad de nodos del input original (784)
 input_nodes = 1568
-hidden_nodes = 600
+hidden_nodes = 400
 output_nodes = 20
 output_por_numero = 10
 
 # learning rate
-learning_rate = 0.5
+learning_rate = 0.6
 
 # create instance of neural network
 n = neuralNetwork(input_nodes,hidden_nodes,output_nodes, learning_rate)
@@ -106,7 +106,7 @@ training_unidades.close()
 # train the neural network
 
 # epochs is the number of times the training data set is used for training
-epochs = 10
+epochs = 30
 
 for e in range(epochs):
     # go through all records in the training data set
