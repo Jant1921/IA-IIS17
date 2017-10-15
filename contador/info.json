@@ -1,6 +1,6 @@
 {
   "main": "redContador.py",
-  "url": "http://",
+  "url": "/contador",
   "languaje": "Python",
   "onTime": "si",
   "score": "100",
